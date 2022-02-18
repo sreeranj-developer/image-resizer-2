@@ -1,0 +1,14 @@
+image-resizer.V.2.0.GUI.stable
+created by sreeranj
+###################################
+  ___   __  __    ___                 ___ 
+ |_ _| |  \/  |  / __|    ___   ___  | _ \
+  | |  | |\/| | | (_ |   |___| |___| |   /
+ |___| |_|  |_|  \___|               |_|_\ V.1.2
+#########################################################
+
+1)run (./resize --install) to install imagemagick
+2)copy your images in a empty folder and select that folder
+3)there will be some bug it will fix in next update"
+
+thank you for using this project 😊!
