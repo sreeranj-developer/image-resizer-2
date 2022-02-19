@@ -27,8 +27,8 @@ shift $((OPTIND - 1))
 
 ########WARNING#################
 if ! which convert > /dev/null; then
-   zenity --warning --text="imagemagick is not installed" --window-icon=icon.png --center 
-   zenity --question --text="do you want to install imagemagick ?" --window-icon=icon.png --center 
+   zenity --warning --text="imagemagick is not installed" --window-icon=icon.png  
+   zenity --question --text="do you want to install imagemagick ?" --window-icon=icon.png  
    case $? in
          0)
                 x-terminal-emulator -e sudo apt install imagemagick
@@ -37,15 +37,15 @@ if ! which convert > /dev/null; then
                 exit;;
                 
         -1)
-                zenity --warning --text="Unexpected occured!" --title='Warning!' --window-icon=icon.png --center 
+                zenity --warning --text="Unexpected occured!" --title='Warning!' --window-icon=icon.png  
                 exit;;
 esac
    sleep 1s;
    exit
 fi
 if ! which yad > /dev/null; then
-   zenity --warning --text="yad is not installed" --window-icon=icon.png --center 
-   zenity --question --text="do yo want to install yad ?" --window-icon=icon.png --center 
+   zenity --warning --text="yad is not installed" --window-icon=icon.png  
+   zenity --question --text="do yo want to install yad ?" --window-icon=icon.png  
       case $? in
          0)
                 x-terminal-emulator -e sudo apt install yad
@@ -54,7 +54,7 @@ if ! which yad > /dev/null; then
                 exit;;
                 
         -1)
-                zenity --warning --text="Unexpected occured!" --title='Warning!' --window-icon=icon.png --center 
+                zenity --warning --text="Unexpected occured!" --title='Warning!' --window-icon=icon.png 
                 exit;;
 esac
    sleep 1s;
